@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookHaven</title>
+</head>
+<body style="margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background-color: #f9f9f9; overflow-x: hidden;">
+    <!-- Header -->
+    <header style="background: linear-gradient(90deg, #1a2a44, #2c3e50); color: white; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+        <h1 style="margin: 0; font-size: 28px; letter-spacing: 1px; animation: fadeIn 1s ease-in;">BookHaven</h1>
+        <nav>
+            <a href="#home" style="color: white; text-decoration: none; margin: 0 20px; font-size: 16px; transition: color 0.3s ease; position: relative;">Home<span style="position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background-color: #3498db; transition: width 0.3s ease;"></span></a>
+            <a href="#about" style="color: white; text-decoration: none; margin: 0 20px; font-size: 16px; transition: color 0.3s ease; position: relative;">About Us<span style="position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background-color: #3498db; transition: width 0.3s ease;"></span></a>
+            <a href="#reviews" style="color: white; text-decoration: none; margin: 0 20px; font-size: 16px; transition: color 0.3s ease; position: relative;">Reviews<span style="position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background-color: #3498db; transition: width 0.3s ease;"></span></a>
+            <a href="#cart" style="color: white; text-decoration: none; margin: 0 20px; font-size: 16px; transition: color 0.3s ease; position: relative;">Cart<span style="position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background-color: #3498db; transition: width 0.3s ease;"></span></a>
+            <a href="#login" style="color: white; text-decoration: none; margin: 0 20px; font-size: 16px; transition: color 0.3s ease; position: relative;">Login<span style="position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background-color: #3498db; transition: width 0.3s ease;"></span></a>
+        </nav>
+        <style>
+            nav a:hover { color: #3498db; }
+            nav a:hover span { width: 100%; }
+        </style>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" style="padding: 80px 30px; text-align: center; background: url('https://thatbookbroad.com/wp-content/uploads/2022/04/pinkbooks.jpg?w=827') no-repeat center/cover; color: white; position: relative;">
+        <div style="background: rgba(0,0,0,0.6); padding: 40px; border-radius: 10px; animation: fadeInUp 1s ease-in;">
+            <h2 style="font-size: 36px; margin: 0 0 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Welcome to BookHaven</h2>
+            <p style="font-size: 20px; max-width: 700px; margin: 0 auto 30px;">Discover transformative reads that inspire and educate. Explore our curated collection today!</p>
+            <a href="#books" style="background-color: #3498db; color: white; padding: 12px 25px; border-radius: 25px; text-decoration: none; font-size: 16px; transition: transform 0.3s ease, box-shadow 0.3s ease;">Shop Now</a>
+        </div>
+        <style>
+            a:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        </style>
+        <div id="books" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; margin-top: 60px;">
+            <!-- Book 1: Atomic Habits -->
+            <div style="background-color: white; padding: 25px; border-radius: 12px; width: 220px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; animation: slideIn 1s ease-in;">
+                <img src="https://bookbins.b-cdn.net/wp-content/uploads/2024/04/Atomic-Habits-The-Almanack-The-Psychology-of-Money-Combo-Best-Seller-Books-Buy-Online-Bookbins-1.jpg" alt="Atomic Habits" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+                <h3 style="color: #2c3e50; margin: 15px 0 10px; font-size: 18px;">Atomic Habits</h3>
+                <p style="color: #7f8c8d; font-size: 16px; margin: 0 0 15px;">$15.99</p>
+                <label style="display: block; background: linear-gradient(90deg, #3498db, #2980b9); color: white; border: none; padding: 10px 20px; border-radius: 25px; cursor: pointer; width: 100%; text-align: center; transition: background 0.3s ease;">
+                    <input type="checkbox" id="cart-book1" style="display: none;">
+                    Add to Cart
+                </label>
+            </div>
+            <!-- Book 2: The Psychology of Money -->
+            <div style="background-color: white; padding: 25px; border-radius: 12px; width: 220px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; animation: slideIn 1.2s ease-in;">
+                <img src="https://99bookstores.com/cdn/shop/files/WhatsAppImage2024-05-04at5.13.48PM.jpg?v=1714823085" alt="The Psychology of Money" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+                <h3 style="color: #2c3e50; margin: 15px 0 10px; font-size: 18px;">It Ends With Us</h3>
+                <p style="color: #7f8c8d; font-size: 16px; margin: 0 0 15px;">$17.99</p>
+                <label style="display: block; background: linear-gradient(90deg, #3498db, #2980b9); color: white; border: none; padding: 10px 20px; border-radius: 25px; cursor: pointer; width: 100%; text-align: center; transition: background 0.3s ease;">
+                    <input type="checkbox" id="cart-book2" style="display: none;">
+                    Add to Cart
+                </label>
+            </div>
+            <!-- Book 3: The Almanack of Naval Ravikant -->
+            <div style="background-color: white; padding: 25px; border-radius: 12px; width: 220px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; animation: slideIn 1.4s ease-in;">
+                <img src="https://m.media-amazon.com/images/I/61woF+K2OwL._AC_UF1000,1000_QL80_.jpg" alt="The Almanack of Naval Ravikant" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+                <h3 style="color: #2c3e50; margin: 15px 0 10px; font-size: 18px;">The Secret</h3>
+                <p style="color: #7f8c8d; font-size: 16px; margin: 0 0 15px;">$12.99</p>
+                <label style="display: block; background: linear-gradient(90deg, #3498db, #2980b9); color: white; border: none; padding: 10px 20px; border-radius: 25px; cursor: pointer; width: 100%; text-align: center; transition: background 0.3s ease;">
+                    <input type="checkbox" id="cart-book3" style="display: none;">
+                    Add to Cart
+                </label>
+            </div>
+            <!-- Book 4: The Anxious Generation -->
+            <div style="background-color: white; padding: 25px; border-radius: 12px; width: 220px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; animation: slideIn 1.6s ease-in;">
+                <img src="https://literaryhypewoman.com/wp-content/uploads/2024/05/440576807_1660107954806766_4959807064628706166_n-2452946252-e1715575862943.jpg?w=1024" alt="The Anxious Generation" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+                <h3 style="color: #2c3e50; margin: 15px 0 10px; font-size: 18px;">Powerless</h3>
+                <p style="color: #7f8c8d; font-size: 16px; margin: 0 0 15px;">$19.99</p>
+                <label style="display: block; background: linear-gradient(90deg, #3498db, #2980b9); color: white; border: none; padding: 10px 20px; border-radius: 25px; cursor: pointer; width: 100%; text-align: center; transition: background 0.3s ease;">
+                    <input type="checkbox" id="cart-book4" style="display: none;">
+                    Add to Cart
+                </label>
+            </div>
+        </div>
+        <style>
+            div[style*="box-shadow"]:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+            label:hover { background: linear-gradient(90deg, #2980b9, #3498db); }
+        </style>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" style="padding: 80px 30px; background-color: #ffffff; text-align: center; animation: fadeIn 1s ease-in;">
+        <h2 style="color: #2c3e50; font-size: 32px; margin-bottom: 20px;">About Us</h2>
+        <p style="color: #34495e; font-size: 18px; max-width: 700px; margin: 0 auto; line-height: 1.6;">BookHaven is dedicated to bringing transformative and inspiring books to readers everywhere. Our curated selection empowers personal growth and lifelong learning.</p>
+        <img src="https://i.pinimg.com/originals/88/58/8e/88588eae7c4a82806d564858810d348b.jpg" alt="Bookshelf" style="width: 100%; max-width: 600px; margin: 30px auto; border-radius: 10px; display: block; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+    </section>
+
+    <!-- Reviews and Ratings Section -->
+    <section id="reviews" style="padding: 80px 30px; background: linear-gradient(135deg, #f4f4f4, #e0e6ef); text-align: center; animation: fadeIn 1s ease-in;">
+        <h2 style="color: #2c3e50; font-size: 32px; margin-bottom: 30px;">Book Reviews & Ratings</h2>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; max-width: 1200px; margin: 0 auto;">
+            <!-- Review for Atomic Habits -->
+            <div style="background-color: white; padding: 25px; border-radius: 12px; width: 300px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease; animation: slideIn 1s ease-in;">
+                <h3 style="color: #2c3e50; font-size: 20px; margin: 0 0 10px;">Atomic Habits</h3>
+                <div style="color: #f1c40f; font-size: 18px; margin-bottom: 15px;">★★★★★ (4.8/5)</div>
+                <p style="color: #34495e; font-size: 14px; line-height: 1.5; margin: 0 0 15px;"><strong>Anna S.</strong>: "Life-changing! Practical tips for building better habits."</p>
+                <p style="color: #34495e; font-size: 14px; line-height: 1.5; margin: 0;"><strong>Mark T.</strong>: "Clear and actionable. Highly recommend."</p>
+            </div>
+            <!-- Review for The Psychology of Money -->
+            <div style="background-color: white; padding: 25px; border-radius: 12px; width: 300px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease; animation: slideIn 1.2s ease-in;">
+                <h3 style="color: #2c3e50; font-size: 20px; margin: 0 0 10px;">The Psychology of Money</h3>
+                <div style="color: #f1c40f; font-size: 18px; margin-bottom: 15px;">★★★★☆ (4.5/5)</div>
+                <p style="color: #34495e; font-size: 14px; line-height: 1.5; margin: 0 0 15px;"><strong>Lisa M.</strong>: "Insightful take on financial behavior."</p>
+                <p style="color: #34495e; font-size: 14px; line-height: 1.5; margin: 0;"><strong>James R.</strong>: "Good read, but some concepts repetitive."</p>
+            </div>
+            <!-- Review for The Almanack of Naval Ravikant -->
+            <div style="background-color: white; padding: 25px; border-radius: 12px; width: 300px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease; animation: slideIn 1.4s ease-in;">
+                <h3 style="color: #2c3e50; font-size: 20px; margin: 0 0 10px;">The Almanack</h3>
+                <div style="color: #f1c40f; font-size: 18px; margin-bottom: 15px;">★★★★☆ (4.3/5)</div>
+                <p style="color: #34495e; font-size: 14px; line-height: 1.5; margin: 0 0 15px;"><strong>Sophia L.</strong>: "Profound wisdom in a concise format."</p>
+                <p style="color: #34495e; font-size: 14px; line-height: 1.5; margin: 0;"><strong>David K.</strong>: "Great insights, but lacks structure."</p>
+            </div>
+            <!-- Review for The Anxious Generation -->
+            <div style="background-color: white; padding: 25px; border-radius: 12px; width: 300px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease; animation: slideIn 1.6s ease-in;">
+                <h3 style="color: #2c3e50; font-size: 20px; margin: 0 0 10px;">The Anxious Generation</h3>
+                <div style="color: #f1c40f; font-size: 18px; margin-bottom: 15px;">★★★★☆ (4.4/5)</div>
+                <p style="color: #34495e; font-size: 14px; line-height: 1.5; margin: 0 0 15px;"><strong>Emma B.</strong>: "Eye-opening analysis of youth mental health."</p>
+                <p style="color: #34495e; font-size: 14px; line-height: 1.5; margin: 0;"><strong>John H.</strong>: "Compelling, but solutions feel incomplete."</p>
+            </div>
+        </div>
+        <!-- Review Submission Form -->
+        <div style="max-width: 500px; margin: 40px auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); animation: fadeInUp 1s ease-in;">
+            <h3 style="color: #2c3e50; font-size: 20px; margin: 0 0 20px;">Submit Your Review</h3>
+            <select style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 25px; font-size: 16px;">
+                <option>Select a Book</option>
+                <option>Atomic Habits</option>
+                <option>The Psychology of Money</option>
+                <option>The Almanack</option>
+                <option>The Anxious Generation</option>
+            </select>
+            <div style="text-align: left; margin: 10px 0;">
+                <label style="color: #34495e; font-size: 14px;">Rating:</label>
+                <div style="color: #f1c40f; font-size: 18px;">★★★★★</div>
+            </div>
+            <textarea placeholder="Write your review..." style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 10px; font-size: 16px; resize: vertical; min-height: 100px;"></textarea>
+            <button style="background: linear-gradient(90deg, #3498db, #2980b9); color: white; border: none; padding: 12px 30px; border-radius: 25px; cursor: pointer; width: 100%; font-size: 16px; transition: transform 0.3s ease, box-shadow 0.3s ease;">Submit Review</button>
+        </div>
+        <style>
+            div[style*="box-shadow"]:hover { transform: translateY(-5px); }
+            select:focus, textarea:focus { border-color: #3498db; outline: none; }
+            button:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        </style>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" style="padding: 80px 30px; background: linear-gradient(135deg, #ecf0f1, #dfe4ea); text-align: center; animation: fadeIn 1s ease-in;">
+        <h2 style="color: #2c3e50; font-size: 32px; margin-bottom: 20px;">Your Cart</h2>
+        <div style="max-width: 700px; margin: 0 auto;">
+            <p id="cart-empty" style="color: #34495e; font-size: 18px; margin-bottom: 30px; display: block;">Your cart is currently empty. Start adding books to proceed!</p>
+            <div id="cart-items" style="display: flex; flex-direction: column; gap: 20px;">
+                <div id="cart-book1-item" style="display: none; background: white; padding: 15px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); text-align: left; animation: slideIn 0.5s ease-in;">
+                    <img src="https://bookbins.b-cdn.net/wp-content/uploads/2024/04/Atomic-Habits-The-Almanack-The-Psychology-of-Money-Combo-Best-Seller-Books-Buy-Online-Bookbins-1.jpg" alt="Atomic Habits" style="width: 80px; height: 120px; object-fit: cover; border-radius: 5px; float: left; margin-right: 15px;">
+                    <h3 style="color: #2c3e50; font-size: 18px; margin: 0 0 10px;">Atomic Habits</h3>
+                    <p style="color: #7f8c8d; font-size: 16px; margin: 0;">$15.99</p>
+                </div>
+                <div id="cart-book2-item" style="display: none; background: white; padding: 15px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); text-align: left; animation: slideIn 0.5s ease-in;">
+                    <img src="https://99bookstores.com/cdn/shop/files/WhatsAppImage2024-05-04at5.13.48PM.jpg?v=1714823085" alt="The Psychology of Money" style="width: 80px; height: 120px; object-fit: cover; border-radius: 5px; float: left; margin-right: 15px;">
+                    <h3 style="color: #2c3e50; font-size: 18px; margin: 0 0 10px;">The Psychology of Money</h3>
+                    <p style="color: #7f8c8d; font-size: 16px; margin: 0;">$17.99</p>
+                </div>
+                <div id="cart-book3-item" style="display: none; background: white; padding: 15px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); text-align: left; animation: slideIn 0.5s ease-in;">
+                    <img src="https://m.media-amazon.com/images/I/61woF+K2OwL._AC_UF1000,1000_QL80_.jpg" alt="The Almanack of Naval Ravikant" style="width: 80px; height: 120px; object-fit: cover; border-radius: 5px; float: left; margin-right: 15px;">
+                    <h3 style="color: #2c3e50; font-size: 18px; margin: 0 0 10px;">The Almanack</h3>
+                    <p style="color: #7f8c8d; font-size: 16px; margin: 0;">$12.99</p>
+                </div>
+                <div id="cart-book4-item" style="display: none; background: white; padding: 15px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); text-align: left; animation: slideIn 0.5s ease-in;">
+                    <img src="https://literaryhypewoman.com/wp-content/uploads/2024/05/440576807_1660107954806766_4959807064628706166_n-2452946252-e1715575862943.jpg?w=1024" alt="The Anxious Generation" style="width: 80px; height: 120px; object-fit: cover; border-radius: 5px; float: left; margin-right: 15px;">
+                    <h3 style="color: #2c3e50; font-size: 18px; margin: 0 0 10px;">The Anxious Generation</h3>
+                    <p style="color: #7f8c8d; font-size: 16px; margin: 0;">$19.99</p>
+                </div>
+            </div>
+        </div>
+        <button style="background: linear-gradient(90deg, #3498db, #2980b9); color: white; border: none; padding: 12px 30px; border-radius: 25px; cursor: pointer; font-size: 16px; transition: transform 0.3s ease, box-shadow 0.3s ease; margin-top: 30px;">Checkout</button>
+        <style>
+            #cart-book1:checked ~ #cart-items #cart-book1-item { display: block; }
+            #cart-book2:checked ~ #cart-items #cart-book2-item { display: block; }
+红色
+            #cart-book3:checked ~ #cart-items #cart-book3-item { display: block; }
+            #cart-book4:checked ~ #cart-items #cart-book4-item { display: block; }
+            #cart-book1:checked ~ #cart-empty, #cart-book2:checked ~ #cart-empty, #cart-book3:checked ~ #cart-empty, #cart-book4:checked ~ #cart-empty { display: none; }
+            button:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+        </style>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login" style="padding: 80 éves 30px; background-color: #ffffff; text-align: center; animation: fadeIn 1s ease-in;">
+        <h2 style="color: #2c3e50; font-size: 32px; margin-bottom: 20px;">Login</h2>
+        <div style="max-width: 350px; margin: 30px auto; background: #f4f4f4; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <input type="text" placeholder="Username" style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 25px; font-size: 16px; transition: border-color 0.3s ease;">
+            <input type="password" placeholder="Password" style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 25px; font-size: 16px; transition: border-color 0.3s ease;">
+            <button style="background: linear-gradient(90deg, #3498db, #2980b9); color: white; border: none; padding: 12px 30px; border-radius: 25px; cursor: pointer; width: 100%; font-size: 16px; transition: transform 0.3s ease, box-shadow 0.3s ease;">Login</button>
+            <p style="color: #34495e; margin-top: 15px; font-size: 14px;">Don't have an account? <a href="#" style="color: #3498db; text-decoration: none; transition: color 0.3s ease;">Sign Up</a></p>
+        </div>
+        <style>
+            input:focus { border-color: #3498db; outline: none; }
+            button:hover, a:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+            a:hover { color: #2980b9; }
+        </style>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: linear-gradient(90deg, #1a2a44, #2c3e50); color: white; text-align: center; padding: 30px; font-size: 14px;">
+        <p style="margin: 0;">© 2025 BookHaven. All rights reserved.</p>
+    </footer>
+
+    <!-- Animations -->
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+    </style>
+</body>
+</html>
